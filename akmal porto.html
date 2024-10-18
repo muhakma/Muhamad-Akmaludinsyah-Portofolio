@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akmal's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #5692B4;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+
+        .nav-link:hover {
+            color: #FFC86A !important;
+        }
+
+        /* Header Section */
+        header {
+             height: 100vh;
+             background-image: url('bg new.jpg');
+             background-size: cover;
+             background-position: center;
+             display: flex;
+             align-items: flex-end; /* Align items to the bottom */
+             justify-content: center; /* Horizontally center the content */
+             color: #353535;
+             text-align: center;
+             position: relative;
+             padding-bottom: 20px; /* Adds some space from the bottom */
+            }
+
+        .header-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .header-content p {
+            font-size: 1.5rem;
+        }
+
+        /* About Section */
+        #about {
+            padding: 60px 0;
+        }
+
+        #about h2 {
+            margin-bottom: 30px;
+        }
+
+        /* Projects Section */
+        #projects {
+            padding: 60px;
+            background-color: #f8f9fa;
+        }
+
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #412900;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+
+        }
+
+        .social-icons {
+            display: inline-block;
+            padding: 0px;
+            margin: 0;
+        }
+
+        .card-contact {
+        background-color: #f8f9fa;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-contact .social-icons a {
+        font-size: 24px;
+        color: #00aaff;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+    }
+
+    .card-contact .social-icons a:hover {
+        color: #005f7f;
+    }
+
+    .form-control:focus {
+        border-color: #00aaff;
+        box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+    }
+
+    .btn-primary {
+        background-color: #5692B4;
+        border-color: #5692B4;
+    }
+
+    .btn-primary:hover {
+        background-color: #dc8b00;
+        border-color: #dc8b00;
+    }
+
+    html {
+    scroll-behavior: smooth;
+    }
+ 
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="https://www.notion.so/Muhamad-Akmaludinsyah-0cf21757949b4aa8b43e4c90fe85e6bd?pvs=4">Akmal's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <h1>Welcome to My Portfolio</h1>
+            <a href="#projects" class="btn btn-primary mt-4">View My Projects</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="text-center">
+        <div class="container">
+            <h2>About Me</h2>
+            <p class="lead">I love solving problems and finding solutions in a fun way. I also enjoy designing user interfaces for products that are easy to understand and use. This has sparked my interest in product design, where I have a strong desire to create designs that look great but also make things easier for users and solve the problems they face.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="text-center">My Projects</h2>
+            <div class="row mt-4">
+                <!-- Sehat1 Website -->
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <img src="Laptops.jpg" class="card-img-top" alt="Sehat1 Website">
+                        <div class="card-body">
+                            <h5 class="card-title">Sehat1 Website</h5>
+                            <p class="card-text">A website to build a healthy lifestyle with interactive features.</p>
+                            <a href="https://www.figma.com/design/UcJYoGYtWCyH0rUV5vzM1g/Micro-challange?node-id=116-2688&t=VKoLXuEqVwLOHTGj-1" class="btn btn-outline-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- E-Parkir UNSIKA -->
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <img src="Frame 4 (1).jpg" class="card-img-top" alt="E-Parkir UNSIKA">
+                        <div class="card-body">
+                            <h5 class="card-title">E-Parkir UNSIKA</h5>
+                            <p class="card-text">A platforms to manage parking at UNSIKA with minimalist and modern features.</p>
+                            <a href="https://www.figma.com/design/jzb8pso8waA20xq09MeF7L/E--Parkir-Unsika?node-id=1-2&t=VKoLXuEqVwLOHTGj-1" class="btn btn-outline-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- HIVcare Apps -->
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <img src="Frame 5.jpg" class="card-img-top" alt="HIVcare Apps">
+                        <div class="card-body">
+                            <h5 class="card-title">HIVcare Apps</h5>
+                            <p class="card-text">A mobile apps for conducting HIV tests for people who are embarrassed to get tested.</p>
+                            <a href="https://www.figma.com/design/qXgzIXeJVPmOSfyOWhT9Ac/Pekan-IT?node-id=0-1&t=cuQrzFySWdFQHtTD-1" class="btn btn-outline-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Gentis Apps -->
+                 <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <img src="Frame 3.jpg" class="card-img-top" alt="Gentis Apps">
+                        <div class="card-body">
+                            <h5 class="card-title">Gentis Apps</h5>
+                            <p class="card-text">A ticket booking application for a trip to Loji waterfall Karawang</p>
+                            <a href="https://www.notion.so/UI-UX-Design-Exploration-Gentis-Ticketing-Apps-5c3e0b1066194b8d8dce9dc77b7ee696?pvs=4" class="btn btn-outline-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card card-contact p-4">
+                        <h5 class="card-title text-center mb-4">Contact Me</h5>
+                        <form onsubmit="sendEmail(); return false;">
+                            <div class="mb-3">
+                                <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea id="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary width w-100">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            function sendEmail() {
+                // Get the form values
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var message = document.getElementById("message").value;
+        
+                // Create the mailto link
+                var mailtoLink = 'mailto:muhamadakmalludinsyah43@email.com' +
+                                 '?subject=Message from ' + encodeURIComponent(name) +
+                                 '&body=' + encodeURIComponent(message) +
+                                 '%0A%0AFrom: ' + encodeURIComponent(name) + 
+                                 ' (' + encodeURIComponent(email) + ')';
+        
+                // Open the mail client with the filled data
+                window.location.href = mailtoLink;
+            }
+        </script>
+    </section>
+
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>© 2024 Akmal's Portfolio. All Rights Reserved.</p>
+    
+    <!--social media links-->
+    <div class="social-icons">
+        <a href="https://www.instagram.com/mhhakmall/" target="_blank" rel="noopener noreferrer" class="text-white">
+            <i class="fab fa-instagram fa-lg"></i> 
+        </a> 
+        <a href="https://www.linkedin.com/in/muhamad-akmaludinsyah-359192298/" target="_blank" rel="noopener noreferrer" class="text-white mx-2">
+            <i class="fab fa-linkedin fa-lg"></i> 
+        </a>
+    </div>
+    
+</footer>
+
+<!-- Bootstrap and FontAwesome -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+</body>
+</html>
